@@ -137,6 +137,104 @@ transform: translate(-50%, -50%);
 color: black;
 }
 
+/* Cards for Why Choose US START */
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.whyChooseUs{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.whyChooseUs h2 {
+  font-family: Playfair ;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.whyChooseUs img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  /* box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25); */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+
+  /* background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%); */
+}
+
+.card_title {
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+/* End for Why Choose US Cards */
 
 
 
@@ -147,6 +245,9 @@ color: black;
   .container {
     margin-top: 10px;
     flex-direction: column;
+  }
+  .container img {
+    width: 100%
   }
   .hero-text {
     width: 100%;
@@ -160,6 +261,12 @@ color: black;
 @media (max-width: 678px) {
   .hero-text h1 {
     font-size: 2rem;
+  }
+    .container img {
+    width: 100%
+  }
+  nav ul {
+    display: none;
   }
 }
 @media (max-width: 428px) {
